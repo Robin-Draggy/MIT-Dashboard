@@ -3,11 +3,18 @@ import { FaHome, FaBars, FaTimes } from 'react-icons/fa';
 import { FcDataConfiguration } from 'react-icons/fc';
 import { GrDocumentConfig } from 'react-icons/gr';
 import { FaFileLines } from 'react-icons/fa6';
+import { IoLogOut } from 'react-icons/io5';
+import { IoMdLogIn } from 'react-icons/io';
 
 export const Sidebar = ({ collapsed, toggleSidebar }) => {
   const { pathname } = useLocation();
 
   const navItems = [
+    {
+      name: 'Login',
+      path: '/login',
+      icon: <IoMdLogIn />
+    },
     { name: 'Dashboard', path: '/', icon: <FaHome /> },
     {
       name: 'configure annonymization',
@@ -19,6 +26,11 @@ export const Sidebar = ({ collapsed, toggleSidebar }) => {
       path: '/annonymization-results',
       icon: <FaFileLines />,
     },
+    {
+      name: 'Logout',
+      path: '/logout',
+      icon: <IoLogOut />
+    }
   ];
 
   return (

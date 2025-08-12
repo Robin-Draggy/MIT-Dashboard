@@ -5,26 +5,26 @@ import { FaCheckCircle, FaSpinner, FaPauseCircle } from "react-icons/fa";
 const statusMap = {
   Complete: <FaCheckCircle className="text-green-500" />,
   Processing: <FaSpinner className="animate-spin text-blue-500" />,
-  Paused: <FaPauseCircle className="text-yellow-500" />,
+  Expired: <FaPauseCircle className="text-yellow-500" />,
 };
 
 const dummyProjects = [
   {
-    name: "Project Apollo",
+    name: "Sazzadur Rahman",
     status: "Complete",
-    records: 1500,
+    records: 80,
     lastModified: "2025-08-05",
   },
   {
-    name: "Project Zeus",
+    name: "Azizul Haque",
     status: "Processing",
-    records: 800,
+    records: 5,
     lastModified: "2025-08-06",
   },
   {
-    name: "Project Hera",
-    status: "Paused",
-    records: 320,
+    name: "Hania Amir",
+    status: "Expired",
+    records: 2,
     lastModified: "2025-08-01",
   },
 ];

@@ -28,7 +28,7 @@ export const Dashboard = () => {
 
       {/* Recent Projects Table */}
       <div>
-        <h2 className='text-xl font-semibold mb-4'>Recent Projects</h2>
+        <h2 className='text-xl font-semibold mb-4'>Recent Patients</h2>
         <RecentProjectsTable />
       </div>
     </div>

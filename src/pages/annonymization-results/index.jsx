@@ -1,4 +1,5 @@
 import React from 'react';
+import { PrivacyMetrics } from '../../components/charts/PrivacyMetrics';
 
 export const AnnonymizationResults = () => {
   return (
@@ -17,26 +18,7 @@ export const AnnonymizationResults = () => {
       </div>
 
       {/* Privacy Metrics */}
-      <div className="mb-6 rounded-md">
-        <h3 className="text-base font-semibold mb-2">Privacy Metrics:</h3>
-        <div className="bg-white rounded-2xl shadow-lg p-4">
-          <h4 className="font-semibold mb-2 text-black">Privacy Assessment</h4>
-          <ul className="text-sm text-[#2f3542] space-y-1">
-            <li>
-              K-Anonymity Level: ✅ <span className="text-black">5</span> (Target: 5)
-            </li>
-            <li>
-              Information Loss: 📊 <span className="text-black">14.2%</span> (Acceptable: &lt;20%)
-            </li>
-            <li>
-              Data Utility Score: 📈 <span className="text-black">85.8%</span> (Good: &gt;80%)
-            </li>
-            <li>
-              Equivalence Classes: <span className="text-black">2,509 groups</span>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <PrivacyMetrics />
 
       {/* Quality Validation */}
       <div className="mb-6 rounded-md">
